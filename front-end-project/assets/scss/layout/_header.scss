@@ -1,0 +1,93 @@
+header{
+    background-image: url(file:///Users/khayalmammadzada/Desktop/front-end%20project/assets/images/Slider-1-1920x925.png);
+    background-size: cover;
+    .slider{
+        position: relative;
+        margin-top: 30px;
+        &:hover .prev{
+           opacity: 1;
+        }
+        &:hover .next-button .next{
+            opacity: 1;
+         }
+        .prev-button{
+            position: relative;
+            top: 160px;
+            left: 3%;
+            
+            button{
+                background-color: #eb4d4b;
+                color: white;
+                border-style: none;
+                padding: 8px 8px;
+                opacity: 0;
+            }
+
+        }
+        
+
+        .info{
+            color: white;
+            position: relative;
+           .camera{
+               font-size: 34px;
+           }
+           .underwater{
+            line-height: 44px
+           }
+           h2{
+               font-weight: 800;
+               font-size:65px;
+               
+           }
+           .shop{
+               background-color: #eb4d4b;
+               color: white;
+               border-style: none;
+               padding: 10px 25px;
+               border-radius: 25px;
+               font-size: 15px;
+               margin-top: 20px;
+               margin-bottom: 100px;
+               &:hover{
+                   background-color: black;
+               }
+           }
+           .lorem{
+               font-size: 14px;
+           }
+           .next-button{
+               position: absolute;
+               right: 10%;
+               top: 170px;
+               button{
+                   background-color: #eb4d4b;
+                   color: white;
+                   border-style: none;
+                   padding: 8px 8px;
+                   opacity: 0;
+               }
+           }
+        }
+        .square-slide{
+            text-align: center;
+            margin-bottom: 18px;
+            
+            .black{
+                padding: 6px 6px;
+                background-color: black;
+                border-style: none;
+                margin: 0 6px;
+            
+            }
+            .red{
+                padding: 6px 6px;
+                background-color: #eb4d4b;
+                border-style: none;
+                
+
+            }
+        }
+    }
+   
+}

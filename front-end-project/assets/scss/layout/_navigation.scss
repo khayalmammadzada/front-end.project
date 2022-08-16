@@ -1,0 +1,123 @@
+nav{
+    padding: 24px 0;
+    .nav-links{
+                margin-top: 6px;
+        ul{
+            display: flex;
+            justify-content:center ;
+            list-style: none;
+            
+            .drone:hover .dropdown{
+                display: flex;
+                transition: 500ms;
+            }
+            .accessories:hover .num-2{
+                display: flex;
+            }
+          
+            li{
+              position: relative;
+              
+             
+              .dropdown{
+                  display: none;
+                 
+                  position: absolute;
+                  left: 0%;
+                  top: 100%;
+                  width: 620px;
+                  height: 400px;
+                  background-color: white;
+                //   animation: dropmenu 600ms ;
+                transition: cubic-bezier(.17,.67,.83,.67);
+                transition-duration: 500ms;
+                  
+                  .dropdown-list{
+                      display: block;
+                      padding-left: 3px;
+                  }
+                  .list-2{
+                      padding-left: 63px;
+                      padding-right: 28px;
+                  }
+                 li{
+                     a{
+                         color: black;
+                         
+                     }
+                 }
+                 .item{
+                     padding: 3px 0;
+                     a{
+                         font-size: 14px;
+                         font-weight: 200;
+                         color: rgb(98, 97, 97);
+                         &:hover{
+                             color: black;
+                         }
+                     }
+                 }
+                 .line{
+                     margin-left: 12px;
+                    background: rgb(210,210,210);
+                    background: linear-gradient(90deg, rgba(210,210,210,1) 100%, rgba(0,212,255,1) 100%);
+                    height: .8px;
+                    width: 116px;
+
+                 }
+              }
+              .num-2{
+                  width: 425px;
+              }
+           
+              
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 400;
+                    padding: 0 12px;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .search-cart-icons{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+
+            li{
+                padding: 0 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 21px;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+@keyframes dropmenu{
+
+    0% {
+         transform: scaleY(1)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(0)
+    }
+    
+}
