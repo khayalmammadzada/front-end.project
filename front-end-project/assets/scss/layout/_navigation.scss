@@ -1,4 +1,9 @@
 nav{
+    position: sticky;
+  
+    // z-index: 1;
+    // top: 0%;
+    background-color: white;
     padding: 24px 0;
     .nav-links{
                 margin-top: 6px;
@@ -74,12 +79,12 @@ nav{
 
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: black;
                     font-size: 15px;
                     font-weight: 400;
                     padding: 0 12px;
                     &:hover{
-                        color: black;
+                        color: #eb4d4b;
                     }
                 }
             }
@@ -96,10 +101,10 @@ nav{
                 padding: 0 10px;
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: black;
                     font-size: 21px;
                     &:hover{
-                        color: black;
+                        color: #eb4d4b;
                     }
                 }
             }

@@ -18,3 +18,57 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$(document).ready(function(){
+    $('.accordion > li > .answer').hide();
+      
+    $('.accordion > li').click(function() {
+      if ($(this).hasClass("active")) {
+        $(this).removeClass("active").find(".answer").slideUp();
+      } else {
+        $(".accordion > li.active .answer").slideUp();
+        $(".accordion > li.active").removeClass("active");
+        $(this).addClass("active").find(".answer").slideDown();
+      }
+      return false;
+    });
+    
+  });
+
+  $('.sponsors .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:4,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+})
+
+
+  var owl = $('.sponsors .owl-carousel');
+owl.owlCarousel({
+    items:3,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})

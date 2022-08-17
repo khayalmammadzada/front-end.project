@@ -1,0 +1,77 @@
+footer{
+    background-color: #f2f6f9;
+    padding-top: 50px;
+    
+    
+      
+        ul{
+            display: flex;
+            justify-content: center;
+       
+            
+            list-style: none;
+            li{
+                position: relative;
+                padding: 0 8px;
+                display: inline-block;
+                margin: 0;
+                
+                a{
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    line-height: 25px;
+                    letter-spacing: 0.5px;
+                    font-size: 14px;
+                    color: #666;
+                    position: relative;
+
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        left: auto;
+                        right: -10px;
+                        background: rgba(102, 102, 102, 0.2);
+                        width: 1px;
+                        height: 15px;
+                        top: 4px;
+                    }
+                }
+            }
+        }
+    
+        #backtotop{
+            background: #eb4d4b none repeat scroll 0 0;
+            color: transparent;
+            border-radius: 50%;
+            bottom: 20px;
+            cursor: pointer;
+            height: 37px;
+            overflow: hidden;
+            padding: 6px;
+            position: fixed;
+            right: 20px;
+            text-align: center;
+            width: 37px;
+            z-index: 99;
+            display: none;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+
+            &::before{
+                content: "\f106";
+                display: inline-block;
+                color: #fff;
+                font-family: FontAwesome;
+                font-size: 20px;
+                line-height: 16px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 10px;
+                
+            }
+        }
+}

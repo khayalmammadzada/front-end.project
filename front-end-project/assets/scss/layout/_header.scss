@@ -1,6 +1,10 @@
 header{
-    background-image: url(file:///Users/khayalmammadzada/Desktop/front-end%20project/assets/images/Slider-1-1920x925.png);
-    background-size: cover;
+    
+    .item{
+        img{
+            width: 100vw;
+        }
+    }
     .slider{
         position: relative;
         margin-top: 30px;
