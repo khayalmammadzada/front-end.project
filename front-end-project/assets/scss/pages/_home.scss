@@ -420,13 +420,22 @@ main{
     .contact-subscribe{
         background-color: #f2f6f9;
         padding-top: 70px;
+        .row{
+            display: flex;
+            align-items: baseline;
+        }
        
        
         .contact-us{
       
             text-align: center;
-            border: 1px solid rgba(102, 102, 102, 0.15);
+            
+            
             padding: 25px 15px;
+            .myform{
+            border: 1px solid rgba(102, 102, 102, 0.15);
+
+            }
             p{
                 font-size: 16px;
                 letter-spacing: 8px;
@@ -503,6 +512,8 @@ main{
                 padding: 8px 20px;
                 background: #eb4d4b;
                 color: #fff;
+            margin-bottom: 15px;
+
                 &:hover{
                     background-color: black;
                 }
@@ -515,7 +526,10 @@ main{
             padding: 40px 15px;
             text-align: center;
             margin: 0 auto;
+            .newsletter{
             border: 1px solid rgba(102, 102, 102, 0.15);
+
+            }
             h2{
                 font-size: 16px;
     letter-spacing: 8px;
