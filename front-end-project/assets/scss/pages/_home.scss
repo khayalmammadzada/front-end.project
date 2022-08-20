@@ -131,6 +131,54 @@ main{
         background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/testimonialbackground.png);
         position: relative;
 
+        .owl-carousel{
+            .owl-dots{
+                display: none;
+            }
+         
+            button.owl-prev{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+                background: #eb4d4b;
+                text-align: center;
+                position: relative;
+                margin: 4px;
+                outline: none;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: black;
+                }
+                span{
+                    font-size: 28px !important;
+                    font-weight: 200;
+                }
+            }
+            button.owl-next{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+                background: #eb4d4b;
+                text-align: center;
+                position: relative;
+                margin: 4px;
+                outline: none;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: black;
+                }
+                span{
+                    font-size: 28px !important;
+                    font-weight: 200;
+                }
+            }
+        }
         .heading{
             padding-top: 80px;
             text-align: center;
@@ -407,11 +455,20 @@ main{
     }
 
     .sponsors{
+        height: 200px;
+        display: flex;
+        align-items: center;
         .owl-carousel{
             .item{
                 width: 200px;
+                
                 img{
                     width: 100%;
+                    
+                }
+                &:hover{
+                    animation: SponsorsRotateY;
+                    animation-duration: 500ms;
                 }
             }
         }
@@ -710,3 +767,11 @@ main{
         transform: rotateY(0deg);
     }
 }
+
+@-webkit-keyframes SponsorsRotateY {
+    0% { transform: rotateY( 0deg); }
+    25% { transform: rotateY( 90deg); }
+    50% { transform: rotateY( 180deg); }
+    75% { transform: rotateY( 270deg); }
+    100% { transform: rotateY( 360deg); }
+  }

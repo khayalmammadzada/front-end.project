@@ -1,0 +1,28 @@
+main{
+    .htc-touch{
+        .container{
+            .row{
+                .product-description{
+                    .image{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .owl-carousel{
+                        margin-top: 20px;
+                        width: 90%;
+                        .item{
+                            width: 100px;
+                            
+                            img{
+                                width: 100%;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

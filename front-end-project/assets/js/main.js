@@ -16,17 +16,39 @@ $(document).ready(function(){
     
   });
 
-  $('.sponsors .owl-carousel').owlCarousel({
+//   $('.sponsors .owl-carousel').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     responsiveClass:true,
+//     responsive:{
+//         0:{
+//             items:4,
+//             nav:true
+//         },
+//         600:{
+//             items:4,
+//             nav:false
+//         },
+//         1000:{
+//             items:5,
+//             nav:true,
+//             loop:true
+//         }
+//     }
+// })
+
+
+ $('.under-htc').owlCarousel({
     loop:true,
     margin:10,
     responsiveClass:true,
     responsive:{
         0:{
-            items:4,
+            items:5,
             nav:true
         },
         600:{
-            items:4,
+            items:5,
             nav:false
         },
         1000:{
@@ -36,6 +58,8 @@ $(document).ready(function(){
         }
     }
 })
+
+
 $('.fabulous-slide').owlCarousel({
     loop:true,
     margin:10,
@@ -80,13 +104,14 @@ $('.slider').owlCarousel({
 })
 
 
-  var owl = $('.sponsors .owl-carousel');
+
+var owl = $('.sponsors');
 owl.owlCarousel({
-    items:3,
+    items:5,
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:3000,
     autoplayHoverPause:true
 });
 $('.play').on('click',function(){
@@ -96,10 +121,11 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
+ 
 
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-//   })
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 
 //   Grid and List view codes below
@@ -245,3 +271,12 @@ function addToCart(e){
     });
 }
 addToCart()
+
+$(window).scroll(function(){
+    if($(window).scrollTop()>=50){
+        $('.header').css('background', 'transparent');
+    }else{
+        $('.header').css('background', 'white')
+    }
+    
+})
