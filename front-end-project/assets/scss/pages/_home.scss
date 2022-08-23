@@ -284,6 +284,59 @@ main{
 
     .products-filter{
         margin-top: 80px;
+        margin-bottom: 80px;
+        .owl-carousel{
+           
+         .owl-nav{
+             position: absolute;
+            top: 97%;
+             left: 46%;
+            button.owl-prev{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+                background: #eb4d4b;
+                text-align: center;
+                position: relative;
+                margin: 4px;
+                outline: none;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                padding-bottom: 30px;
+                &:hover{
+                    background-color: black;
+                }
+                span{
+                    font-size: 28px !important;
+                    font-weight: 200;
+                }
+            }
+            button.owl-next{
+                color: white;
+                display: inline-block;
+                vertical-align: middle;
+                background: #eb4d4b;
+                text-align: center;
+                position: relative;
+                margin: 4px;
+                outline: none;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: black;
+                }
+                span{
+                    font-size: 28px !important;
+                    font-weight: 200;
+                }
+            }
+         }
+        }
+
         .heading{
             text-align: center;
             p{
@@ -384,7 +437,6 @@ main{
               display: block;
               width: 100%;
               height: auto;
-              background-color: transparent;
               padding: 20px;
               margin: 0 auto 15px auto;
               border-bottom: 1px solid #ddd;
@@ -392,6 +444,7 @@ main{
               cursor: pointer;
               
               &.active {
+                background-color: #f2f6f9 !important;
                 h3 {
                   &:after {
                     content: "\f106";
@@ -436,6 +489,7 @@ main{
                 padding: 0;
                 cursor: pointer;
                 
+                
                 p {
                   position: relative;
                   padding: 10px 0 0 0;
@@ -455,20 +509,23 @@ main{
     }
 
     .sponsors{
-        height: 200px;
+        height: 130px !important;
         display: flex;
         align-items: center;
         .owl-carousel{
             .item{
                 width: 200px;
+                padding-top: 40px;
                 
                 img{
                     width: 100%;
+                    transition: 1s;
                     
                 }
                 &:hover{
-                    animation: SponsorsRotateY;
-                    animation-duration: 500ms;
+                    img{
+                        transform: rotateY(360deg);
+                    }
                 }
             }
         }
@@ -768,10 +825,63 @@ main{
     }
 }
 
-@-webkit-keyframes SponsorsRotateY {
-    0% { transform: rotateY( 0deg); }
-    25% { transform: rotateY( 90deg); }
-    50% { transform: rotateY( 180deg); }
-    75% { transform: rotateY( 270deg); }
-    100% { transform: rotateY( 360deg); }
-  }
+@media screen and(max-width:992px){
+.header{
+    .row{
+        flex-direction: row !important;
+    }
+    .logo-big{
+        display: none !important;
+    }
+    .nav{
+        display: none !important;
+    }
+    .logo-med{
+        display: flex !important;
+        img{
+            width: 100% !important;
+        }
+    }
+    .icons{
+        padding: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        .bi-search{
+            display: none !important;
+        }
+        i{
+            color: black;
+            margin: 0 !important;
+        }
+        .basket{
+            .basket-dropdown-menu{
+                width: 290px !important;
+                right: -30px !important;
+            }
+        }
+        .user-btn{
+            margin-right: 10px !important;
+            i{
+                font-size: 25px !important;
+            }
+        }
+    }
+    .menu{
+        display: flex !important;
+        .bi-search{
+            margin-left: 18px !important;
+        
+        }
+        font-size: 23px !important;
+        .search-btn{
+            i{
+                font-size: 20px !important;
+            }
+            .search-dropdown-menu{
+                left: 140px !important;
+            }
+        }
+    }
+
+}
+}
