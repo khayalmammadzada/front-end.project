@@ -1,3 +1,6 @@
+html{
+scroll-behavior: smooth !important;
+}
 main{
     .account-image{
         .bg-image{
@@ -479,7 +482,7 @@ main{
                 input{
                  
                     height: 45px;
-                    width: 250px !important;
+                    width: 45% !important;
                     border-radius: 15px;
                     box-shadow: none;
                     width: 100%;
@@ -752,5 +755,14 @@ main{
         }
       }
   }
+  .radio-part{
+      .row{
+          flex-direction: row !important;
+      }
+  }
     
+}
+
+@media screen and(max-width:400px){
+
 }

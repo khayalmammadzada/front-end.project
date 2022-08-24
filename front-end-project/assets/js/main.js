@@ -26,15 +26,19 @@ $(document).ready(function(){
     responsive:{
         0:{
             items:4,
-            nav:true
+            nav:true,
+            dots:false,
+
         },
         600:{
             items:4,
-            nav:false
+            nav:true,
+            dots:false
         },
         1000:{
             items:5,
             nav:true,
+            dots:false,
             loop:true
         }
     }

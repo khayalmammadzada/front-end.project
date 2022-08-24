@@ -8,7 +8,7 @@ footer{
         ul{
             display: flex;
             justify-content: center;
-       
+            flex-wrap: wrap;
             
             list-style: none;
             li{
@@ -16,6 +16,7 @@ footer{
                 padding: 0 8px;
                 display: inline-block;
                 margin: 0;
+
                 
                 a{
                     text-decoration: none;
@@ -75,4 +76,13 @@ footer{
                 
             }
         }
+}
+
+@media screen and(max-width:992px){
+    footer{
+        .row{
+        flex-direction: row !important;
+
+        }
+    }
 }

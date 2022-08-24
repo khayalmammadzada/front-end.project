@@ -755,6 +755,8 @@ footer ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
 }
 
@@ -817,6 +819,15 @@ footer #backtotop::before {
   position: absolute;
   right: 0;
   top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  footer .row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
 }
 
 html {
@@ -2195,7 +2206,7 @@ main .contact-subscribe .contact-us .inputs {
 
 main .contact-subscribe .contact-us .inputs input {
   height: 45px;
-  width: 250px !important;
+  width: 45% !important;
   border-radius: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -2494,6 +2505,10 @@ main .contact-subscribe .subscribe .socials ul .instagram i {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 main .account-image .bg-image {
@@ -3000,7 +3015,7 @@ main .contact-subscribe .contact-us .inputs {
 
 main .contact-subscribe .contact-us .inputs input {
   height: 45px;
-  width: 250px !important;
+  width: 45% !important;
   border-radius: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -3293,6 +3308,12 @@ main .contact-subscribe .subscribe .socials ul .instagram i {
   }
   .sign-up .form-group .control-label {
     padding-left: 5px !important;
+  }
+  .radio-part .row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
   }
 }
 
@@ -3783,7 +3804,7 @@ main .contact-subscribe .contact-us .inputs {
 
 main .contact-subscribe .contact-us .inputs input {
   height: 45px;
-  width: 250px !important;
+  width: 45% !important;
   border-radius: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -5029,6 +5050,61 @@ main .sponsors {
           align-items: center;
 }
 
+main .sponsors .owl-carousel .owl-nav {
+  position: absolute;
+  top: 97%;
+  left: 46%;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-prev {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  background: #eb4d4b;
+  text-align: center;
+  position: relative;
+  margin: 4px;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  padding-bottom: 30px;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: black;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 28px !important;
+  font-weight: 200;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-next {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  background: #eb4d4b;
+  text-align: center;
+  position: relative;
+  margin: 4px;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: black;
+}
+
+main .sponsors .owl-carousel .owl-nav button.owl-next span {
+  font-size: 28px !important;
+  font-weight: 200;
+}
+
 main .sponsors .owl-carousel .item {
   width: 200px;
   padding-top: 40px;
@@ -5116,7 +5192,7 @@ main .contact-subscribe .contact-us .inputs {
 
 main .contact-subscribe .contact-us .inputs input {
   height: 45px;
-  width: 250px !important;
+  width: 45% !important;
   border-radius: 15px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -5389,6 +5465,9 @@ main .contact-subscribe .subscribe .socials ul .instagram i {
 }
 
 @media screen and (max-width: 992px) {
+  .header {
+    background-color: white !important;
+  }
   .header .row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -5422,7 +5501,7 @@ main .contact-subscribe .subscribe .socials ul .instagram i {
     display: none !important;
   }
   .header .icons i {
-    color: black;
+    color: black !important;
     margin: 0 !important;
   }
   .header .icons .basket .basket-dropdown-menu {
