@@ -76,12 +76,15 @@ main{
                 line-height: 24px;
             }
             .features{
-                display: flex;
+               
                 
                 
                 ul{
+                    padding-left: 0;
                     
                     li{
+                        width: 50%;
+                        float: left;
                         font-size: 14px;
                         letter-spacing: 0.5px;
                         font-weight: 400;
@@ -111,6 +114,7 @@ main{
             }
             .view-more{
                 button{
+                    margin-top: 10px;
                     border-style: none;
                     padding: 10px 25px;
                     background: #eb4d4b;
@@ -879,6 +883,8 @@ main{
     }
 }
 
+
+// Responsiveness for Ipad Air
 @media screen and(max-width:992px){
 .header{
     background-color: white !important;
@@ -940,4 +946,109 @@ main{
     }
 
 }
+
+.slider{
+    .row{
+        flex-direction: row;
+    }
+}
+.services{
+    .row{
+        flex-direction: row;
+    }
+}
+.product-show{
+    .row{
+        flex-direction: row;
+    }
+    .description{
+        margin-top: 10px;
+        text-align: center;
+        .line{
+            margin: 0 auto;
+        }
+        .desc{
+            margin-top: 7px;
+        }
+    }
+}
+
+.features{
+  .list-item{
+      display: inline-block !important;
+        li{
+            display: inline-block !important;
+            vertical-align: middle !important;
+            float: none !important;
+            width: auto !important;
+        }
+    
+  }
+}
+.customer-review{
+    .row{
+        flex-direction: row;
+    }
+}
+.faq{
+    .row{
+        flex-direction: row;
+    }
+}
+
+.slider-content{
+    span{
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+    h2{
+        font-size: 34px !important;
+        line-height: 40px !important;
+        margin-bottom: 6px !important;
+    }
+    p{
+        font-size: 13px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        line-height: 16px !important;
+    }
+    .shop-button{
+        margin-top: 12px !important;
+    }
+}
+
+}
+
+
+// Responsiveness for Iphone 12 pro
+@media screen and(max-width:410px){
+    .features{
+        text-align: left !important;
+        .list-item{
+            
+              li{
+                display: block !important;
+                text-align: left !important;
+              }
+}
+    }
+
+    .slider-content{
+        span{
+            font-size: 13px !important;
+            line-height: 10px !important;
+        }
+        h2{
+            font-size: 15px !important;
+            line-height: 16px !important;
+            margin-bottom: 5px !important;
+        }
+        p{
+            display: none !important;
+        }
+        .shop-button{
+            margin-top: 12px !important;
+        }
+    }
+
 }

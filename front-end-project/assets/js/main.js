@@ -25,7 +25,7 @@ $(document).ready(function(){
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:4,
+            items:2,
             nav:true,
             dots:false,
 
@@ -73,13 +73,13 @@ $('.fabulous-slide').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:1,
+            items:2,
             nav:true,
             dots: false
         },
         600:{
-            items:1,
-            nav:false,
+            items:3,
+            nav:true,
             dots: false
             
         },
@@ -131,6 +131,18 @@ $('.stop').on('click',function(){
 //     $('[data-toggle="tooltip"]').tooltip()
 //   })
 
+// $(function () {
+
+//     // Init
+//     $('[data-toggle="tooltip"]').tooltip()
+    
+//     // Update jquery
+//     // $('#tt').attr('data-bs-original-title', 'New Tooltip Title');
+    
+//     // Update js
+//     document.getElementById('tt').setAttribute('data-bs-original-title', 'New Tooltip Title');
+//   })
+
 
 //   Grid and List view codes below
 let viewButtons=document.querySelectorAll(".product-list button")
@@ -168,7 +180,7 @@ $('.owl-carousel').owlCarousel({
         },
         600:{
             items:1,
-            nav:false
+            nav:true
         },
         1000:{
             items:2,
@@ -310,14 +322,8 @@ function addToCart(e){
 }
 
 
-// $(window).scroll(function(){
-//     if($(window).scrollTop()>=50){
-//         $('.header').css('background', 'transparent');
-//     }else{
-//         $('.header').css('background', 'white')
-//     }
-    
-// })
+
+// Navbar scroll below
 
 $(document).ready(function(){
     $(window).bind('scroll', function(){
@@ -331,37 +337,14 @@ $(document).ready(function(){
 })
 
 
-// function totalCost(item){
-//     let cartCost=localStorage.getItem('totalCost')
-//     if(cartCost!=null){
-//         cartCost=parseInt(cartCost)
-//         localStorage.setItem("totalCost", cartCost+item.price)
 
-//     }else{
-//         localStorage.setItem("totalCost", item.price)
-//     }
-// }
 
-// function displayCart(item){
-// let cartItems=localStorage.getItem("basket")
-// cartItems=JSON.parse(cartItems);
-// let table=document.querySelector(".table-responsive tbody tr")
-// if(cartItems){
-//     Object.values(cartItems && table).map(item=>{
-//         table.innerHTML+= `<td class="text-center"> 
-//         <a href=""><img src="assets/images/${item.picture}.jpg" class="img-thumbnail"></a> 
-//         </td> 
-//         <td class="text-left"><a href="">${item.name}</a></td>`
 
-//     });
-// }
-// }
+
 addToCart()
 
 
-// if(!tBody.firstElementChild){
-//     document.querySelector(".second").style.display="none"
-//     document.querySelector(".emptyCartText").style.display="flex"
+document.querySelector(".emptyCartText").style.display="flex"
     
     
 

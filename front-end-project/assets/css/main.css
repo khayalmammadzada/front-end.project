@@ -101,6 +101,10 @@ body {
   font-weight: 500;
 }
 
+.header .container .row .nav .main-ul li:hover {
+  color: #222;
+}
+
 .header .container .row .nav .main-ul li:hover .dropdown-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +190,10 @@ body {
 
 .header .container .row .icons i:first-child {
   font-size: 20px;
+}
+
+.header .container .row .icons i:hover {
+  color: #222;
 }
 
 .header .container .row .icons .basket {
@@ -333,7 +341,8 @@ body {
 
 .different-header {
   background-color: white !important;
-  position: absolute !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
 }
 
 .different-header .main-ul li {
@@ -566,6 +575,10 @@ header .slider .item .container .slider-content .shop-button button {
   border-radius: 30px;
   background-color: #eb4d4b;
   color: #fff;
+}
+
+header .slider .item .container .slider-content .shop-button button:hover {
+  background-color: #222;
 }
 
 .active {
@@ -819,15 +832,6 @@ footer #backtotop::before {
   position: absolute;
   right: 0;
   top: 10px;
-}
-
-@media screen and (max-width: 992px) {
-  footer .row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
-  }
 }
 
 html {
@@ -1576,6 +1580,11 @@ main .filter-products .active {
   height: 50px !important;
 }
 
+main .htc-touch .container .row .product-description {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 main .htc-touch .container .row .product-description .image {
   width: 100%;
 }
@@ -1717,6 +1726,39 @@ main .htc-touch .container .row .product-description ul.accordion .main-li div.a
   font-weight: 400;
   color: #7a7a7a;
   font-size: 14px;
+}
+
+main .htc-touch .container .row .product-right .social-toolbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .htc-touch .container .row .product-right .rating-wrapper {
+  margin-top: 10px;
+}
+
+main .htc-touch .container .row .product-right .rating-wrapper .fa-star:before {
+  content: "\f005";
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+main .htc-touch .container .row .product-right .rating-wrapper .review-count {
+  text-decoration: none;
+  font-size: 12px;
+  color: #888888;
+}
+
+main .htc-touch .container .row .product-right .rating-wrapper .write-review {
+  text-decoration: none;
+  font-size: 12px;
+  color: #888888;
+}
+
+main .htc-touch .container .row .product-right .price {
+  margin-top: 10px;
 }
 
 main .account-image .bg-image {
@@ -4590,13 +4632,13 @@ main .product-show .description .desc {
   line-height: 24px;
 }
 
-main .product-show .description .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main .product-show .description .features ul {
+  padding-left: 0;
 }
 
 main .product-show .description .features ul li {
+  width: 50%;
+  float: left;
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: 400;
@@ -4625,6 +4667,7 @@ main .product-show .description .features .left {
 }
 
 main .product-show .description .view-more button {
+  margin-top: 10px;
   border-style: none;
   padding: 10px 25px;
   background: #eb4d4b;
@@ -5528,6 +5571,98 @@ main .contact-subscribe .subscribe .socials ul .instagram i {
   }
   .header .menu .search-btn .search-dropdown-menu {
     left: 140px !important;
+  }
+  .slider .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .product-show .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .product-show .description {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .product-show .description .line {
+    margin: 0 auto;
+  }
+  .product-show .description .desc {
+    margin-top: 7px;
+  }
+  .features .list-item {
+    display: inline-block !important;
+  }
+  .features .list-item li {
+    display: inline-block !important;
+    vertical-align: middle !important;
+    float: none !important;
+    width: auto !important;
+  }
+  .customer-review .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .faq .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .slider-content span {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+  .slider-content h2 {
+    font-size: 34px !important;
+    line-height: 40px !important;
+    margin-bottom: 6px !important;
+  }
+  .slider-content p {
+    font-size: 13px !important;
+    margin: 0 !important;
+    width: 100% !important;
+    line-height: 16px !important;
+  }
+  .slider-content .shop-button {
+    margin-top: 12px !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .features {
+    text-align: left !important;
+  }
+  .features .list-item li {
+    display: block !important;
+    text-align: left !important;
+  }
+  .slider-content span {
+    font-size: 13px !important;
+    line-height: 10px !important;
+  }
+  .slider-content h2 {
+    font-size: 15px !important;
+    line-height: 16px !important;
+    margin-bottom: 5px !important;
+  }
+  .slider-content p {
+    display: none !important;
+  }
+  .slider-content .shop-button {
+    margin-top: 12px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

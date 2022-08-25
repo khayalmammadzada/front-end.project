@@ -43,10 +43,11 @@
                         color: white;
                         font-weight: 500;
                         &:hover{
+                            color: #222;
                             .dropdown-menu{
                                 display: flex;
                                 transform: translateY(0px);
-                               opacity: 1;
+                                opacity: 1;
                                 
                             }
                         }
@@ -106,6 +107,9 @@
                     color: white;
                     &:first-child{
                         font-size: 20px;
+                    }
+                    &:hover{
+                        color: #222;
                     }
                 }
                 .basket{
@@ -239,7 +243,7 @@
 }
 .different-header{
     background-color: white !important;
-    position: absolute !important;
+    position: sticky !important;
     .main-ul{
         li{
             color: black !important;
@@ -434,6 +438,9 @@ header{position: relative;
                         border-radius: 30px;
                         background-color: #eb4d4b;
                         color: #fff;
+                        &:hover{
+                            background-color: #222;
+                        }
                         }
                     }
                 }
