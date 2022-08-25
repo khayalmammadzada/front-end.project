@@ -127,21 +127,8 @@ $('.stop').on('click',function(){
 
  
 
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-//   })
 
-// $(function () {
 
-//     // Init
-//     $('[data-toggle="tooltip"]').tooltip()
-    
-//     // Update jquery
-//     // $('#tt').attr('data-bs-original-title', 'New Tooltip Title');
-    
-//     // Update js
-//     document.getElementById('tt').setAttribute('data-bs-original-title', 'New Tooltip Title');
-//   })
 
 
 //   Grid and List view codes below
@@ -444,3 +431,8 @@ function addToCartPage(){
     })
 }
 addToCartPage()
+
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
