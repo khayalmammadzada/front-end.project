@@ -127,9 +127,7 @@ $('.stop').on('click',function(){
 
  
 
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-//   })
+
 
 
 
@@ -434,3 +432,8 @@ function addToCartPage(){
     })
 }
 addToCartPage()
+
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
